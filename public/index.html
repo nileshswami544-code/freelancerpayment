@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth-container">
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+        </div>
+        <div id="signup-form" style="display: none;">
+            <h2>Sign Up</h2>
+            <input type="text" id="signup-username" placeholder="Username">
+            <input type="password" id="signup-password" placeholder="Password">
+            <button id="signup-btn">Sign Up</button>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+    </div>
+
+    <div id="app-container" style="display: none;">
+        <header>
+            <h1>Freelancer Dashboard</h1>
+            <button id="logout-btn">Logout</button>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#" data-section="dashboard">Dashboard</a></li>
+                    <li><a href="#" data-section="clients">Clients</a></li>
+                    <li><a href="#" data-section="projects">Projects</a></li>
+                    <li><a href="#" data-section="invoices">Invoices</a></li>
+                    <li><a href="#" data-section="payments">Payments</a></li>
+                    <li><a href="#" data-section="reports">Reports</a></li>
+                </ul>
+            </nav>
+            <section id="dashboard" class="content-section">
+                <h2>Dashboard</h2>
+                <!-- Dashboard content will be loaded here -->
+            </section>
+            <section id="clients" class="content-section" style="display: none;">
+                <h2>Clients</h2>
+                <!-- Clients content will be loaded here -->
+            </section>
+            <section id="projects" class="content-section" style="display: none;">
+                <h2>Projects</h2>
+                <!-- Projects content will be loaded here -->
+            </section>
+            <section id="invoices" class="content-section" style="display: none;">
+                <h2>Invoices</h2>
+                <!-- Invoices content will be loaded here -->
+            </section>
+            <section id="payments" class="content-section" style="display: none;">
+                <h2>Payments</h2>
+                <!-- Payments content will be loaded here -->
+            </section>
+            <section id="reports" class="content-section" style="display: none;">
+                <h2>Reports</h2>
+                <!-- Reports content will be loaded here -->
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
